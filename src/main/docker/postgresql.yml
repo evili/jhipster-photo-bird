@@ -1,0 +1,11 @@
+version: '2'
+services:
+    jhphotobird-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/jhPhotoBird/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=jhPhotoBird
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
